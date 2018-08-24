@@ -9,3 +9,5 @@
 
 rootProject.name = 'university'
 include 'student-service'
+include 'tutor-service'
+include 'subject-service'
