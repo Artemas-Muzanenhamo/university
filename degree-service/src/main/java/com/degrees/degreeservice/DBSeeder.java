@@ -12,9 +12,9 @@ import java.util.List;
 public class DBSeeder implements CommandLineRunner {
 
     private final DegreeRepository degreeRepository;
-    public static final String BSC = "BSc";
-    public static final String MSC = "MSc";
-    public static final String PHD = "PHD";
+    private static final String BSC = "BSc";
+    private static final String MSC = "MSc";
+    private static final String PHD = "PHD";
 
     public DBSeeder(DegreeRepository degreeRepository) {
         this.degreeRepository = degreeRepository;
