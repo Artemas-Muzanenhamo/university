@@ -23,4 +23,5 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/degree-service.iml
 /.idea/
