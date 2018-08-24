@@ -1,14 +1,8 @@
 package com.students.studentservice.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.List;
 
-@Data
-@Getter
 @Entity
 public class Student {
     @Id
