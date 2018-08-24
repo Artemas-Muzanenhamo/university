@@ -12,5 +12,5 @@ public interface DegreeRepository extends JpaRepository<Degree, Integer> {
 
     List<Degree> findAllByCategoryIgnoreCaseContaining(@Param("category") String category);
 
-    List<Degree> findAllByHonorsContainingIgnoreCase(@Param("honors") String honors);
+    List<Degree> findAllByHonorsIgnoreCaseContaining(@Param("honors") String honors);
 }
