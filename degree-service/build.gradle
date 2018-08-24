@@ -35,4 +35,5 @@ dependencies {
 	compile('org.hibernate:hibernate-entitymanager')
 	compile( group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile('org.junit.jupiter:junit-jupiter-api')
 }
