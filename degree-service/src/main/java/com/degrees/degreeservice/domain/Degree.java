@@ -1,4 +1,4 @@
-package com.degrees.degree.domain;
+package com.degrees.degreeservice.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
