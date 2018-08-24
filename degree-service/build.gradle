@@ -30,6 +30,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.data:spring-data-rest-hal-browser')
 	compile('org.springframework.data:spring-data-jpa')
+	compile('com.h2database:h2')
+	compile('org.hibernate:hibernate-core')
+	compile('org.hibernate:hibernate-entitymanager')
 	compile( group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
