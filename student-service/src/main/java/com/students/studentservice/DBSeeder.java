@@ -23,7 +23,7 @@ public class DBSeeder implements CommandLineRunner {
         Student artemas = new Student(
                 "Artemas", "Muzanenhamo", 28, new HashMap<String, String>() {
             {
-                put("Software Engineering", "BSc");
+                put("BSc", "Software Engineering");
             }
         }
 
@@ -32,8 +32,8 @@ public class DBSeeder implements CommandLineRunner {
         Student thomas = new Student(
                 "Thomas", "Welbeck", 40, new HashMap<String, String>() {
             {
-                put("Computer Science", "BSc");
-                put("Accounting", "MSc");
+                put("BSc", "Computer Science");
+                put("MSc", "Accounting");
             }
         }
         );
@@ -41,7 +41,7 @@ public class DBSeeder implements CommandLineRunner {
         Student william = new Student(
                 "William", "Dorothy", 20, new HashMap<String, String>() {
             {
-                put("Geology", "BSc");
+                put("BSc", "Geology");
             }
         }
         );
@@ -49,9 +49,9 @@ public class DBSeeder implements CommandLineRunner {
         Student james = new Student(
                 "James", "Spence", 55, new HashMap<String, String>() {
             {
-                put("Law", "BSc");
-                put("Criminal Law", "MSc");
-                put("Judicial Law", "PHD");
+                put("BSc", "Law");
+                put("MSc", "Criminal Law");
+                put("PHD", "Judicial Law");
             }
         }
         );
@@ -59,7 +59,7 @@ public class DBSeeder implements CommandLineRunner {
         Student rob = new Student(
                 "Rob", "Williams", 30, new HashMap<String, String>() {
             {
-                put("Pure Mathematics", "BSc");
+                put("BSc", "Pure Mathematics");
             }
         }
         );
