@@ -3,6 +3,7 @@ package com.students.studentservice.repository;
 import com.students.studentservice.domain.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 import java.util.Map;
@@ -14,7 +15,15 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
 
     List<Student> findStudentsByAgeAfter(@Param("ageafter") int age);
 
-    List<Student> findStudentsByNameAndSurnameIgnoreCaseContaining(@Param("name") String name, @Param("surname") String surname);
+    List<Student> findStudentsByNameIgnoreCaseContainingAndSurnameIgnoreCaseContaining(@Param("name") String name, @Param("surname") String surname);
 
     List<Student> findStudentsByDegreesIgnoreCaseContaining(@Param("degree") String degree);
+
+    @Override
+    @RestResource(exported = false)
+    void delete(Student student);
+
+    @Override
+    @RestResource(exported = false)
+    void deleteAll();
 }
