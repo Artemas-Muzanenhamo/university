@@ -20,7 +20,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
 
     Student findFirstByNameIgnoreCaseContaining(@Param("name") String name);
 
-    Student findFirstByNameIgnoreCaseAndSurnameIgnoreCase(String name, String surname);
+    Student findFirstByNameIgnoreCaseAndSurnameIgnoreCase(@Param("name") String name, @Param("surname") String surname);
 
     @Override
     @RestResource(exported = false)
