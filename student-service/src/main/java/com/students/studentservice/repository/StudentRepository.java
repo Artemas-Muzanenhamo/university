@@ -6,7 +6,6 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
-import java.util.Map;
 
 public interface StudentRepository extends JpaRepository<Student, Integer> {
     List<Student> findStudentsByNameIgnoreCaseContaining(@Param("name") String name);
@@ -18,6 +17,8 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
     List<Student> findStudentsByNameIgnoreCaseContainingAndSurnameIgnoreCaseContaining(@Param("name") String name, @Param("surname") String surname);
 
     List<Student> findStudentsByDegreesIgnoreCaseContaining(@Param("degree") String degree);
+
+    Student findFirstByNameIgnoreCaseContaining(@Param("name") String name);
 
     @Override
     @RestResource(exported = false)
