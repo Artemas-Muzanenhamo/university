@@ -14,6 +14,8 @@ public interface TutorRepository extends JpaRepository<Tutor, String> {
 
     List<Tutor> findTutorsByDegreesIgnoreCaseIn(@Param("degree") List<String> degree);
 
+    Tutor findFirstByNameIgnoreCaseContaining(@Param("name") String name);
+
     @Override
     @RestResource(exported = false)
     void delete(Tutor entity);
