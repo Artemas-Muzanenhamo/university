@@ -22,15 +22,15 @@ public class DBSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Degree cs = new Degree("Computer Science", "Information Technology", Arrays.asList(BSC, MSC, PHD));
-        Degree se = new Degree("Software Engineering", "Information Technology", Arrays.asList(BSC, MSC, PHD));
-        Degree geo = new Degree("Geology","Earth Science", Arrays.asList(BSC, MSC, PHD));
-        Degree acc = new Degree("Accounting", "Bookeeping", Arrays.asList(BSC, MSC, PHD));
-        Degree bm = new Degree("Business Management", "Business", Arrays.asList(BSC, MSC, PHD));
-        Degree pm = new Degree("Pure Mathematics", "Mathematics", Arrays.asList(BSC, MSC, PHD));
-        Degree jl = new Degree("Judicial Law", "Law",  Arrays.asList(PHD));
-        Degree law = new Degree("Law", "Law", Arrays.asList(BSC));
-        Degree cl = new Degree("Criminal Law", "Law",  Arrays.asList(MSC));
+        Degree cs = new Degree(0L,"Computer Science", "Information Technology", Arrays.asList(BSC, MSC, PHD));
+        Degree se = new Degree(0L,"Software Engineering", "Information Technology", Arrays.asList(BSC, MSC, PHD));
+        Degree geo = new Degree(0L,"Geology","Earth Science", Arrays.asList(BSC, MSC, PHD));
+        Degree acc = new Degree(0L,"Accounting", "Bookeeping", Arrays.asList(BSC, MSC, PHD));
+        Degree bm = new Degree(0L,"Business Management", "Business", Arrays.asList(BSC, MSC, PHD));
+        Degree pm = new Degree(0L,"Pure Mathematics", "Mathematics", Arrays.asList(BSC, MSC, PHD));
+        Degree jl = new Degree(0L,"Judicial Law", "Law",  Arrays.asList(PHD));
+        Degree law = new Degree(0L,"Law", "Law", Arrays.asList(BSC));
+        Degree cl = new Degree(0L,"Criminal Law", "Law",  Arrays.asList(MSC));
 
         // delete all data before we add new data
         this.degreeRepository.deleteAll();

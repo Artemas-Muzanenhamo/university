@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-public interface DegreeRepository extends JpaRepository<Degree, Integer> {
+public interface DegreeRepository extends JpaRepository<Degree, Long> {
 
     Degree findDegreeByNameIgnoreCaseContaining(@Param("degree") String degreeName);
 
