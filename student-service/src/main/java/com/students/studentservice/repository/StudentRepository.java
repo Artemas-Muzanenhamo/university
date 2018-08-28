@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-public interface StudentRepository extends JpaRepository<Student, Integer> {
+public interface StudentRepository extends JpaRepository<Student, Long> {
     List<Student> findStudentsByNameIgnoreCaseContaining(@Param("name") String name);
 
     List<Student> findStudentsByAge(@Param("age") int age);
