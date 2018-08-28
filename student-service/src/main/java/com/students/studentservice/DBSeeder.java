@@ -21,7 +21,7 @@ public class DBSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Student artemas = new Student(
-                "Artemas", "Muzanenhamo", 28, new HashMap<String, String>() {
+                0L,"Artemas", "Muzanenhamo", 28, new HashMap<String, String>() {
             {
                 put("BSc", "Software Engineering");
             }
@@ -30,7 +30,7 @@ public class DBSeeder implements CommandLineRunner {
         );
 
         Student thomas = new Student(
-                "Thomas", "Welbeck", 40, new HashMap<String, String>() {
+                0L,"Thomas", "Welbeck", 40, new HashMap<String, String>() {
             {
                 put("BSc", "Computer Science");
                 put("MSc", "Accounting");
@@ -39,7 +39,7 @@ public class DBSeeder implements CommandLineRunner {
         );
 
         Student william = new Student(
-                "William", "Dorothy", 20, new HashMap<String, String>() {
+                0L,"William", "Dorothy", 20, new HashMap<String, String>() {
             {
                 put("BSc", "Geology");
             }
@@ -47,7 +47,7 @@ public class DBSeeder implements CommandLineRunner {
         );
 
         Student james = new Student(
-                "James", "Spence", 55, new HashMap<String, String>() {
+                0L,"James", "Spence", 55, new HashMap<String, String>() {
             {
                 put("BSc", "Law");
                 put("MSc", "Criminal Law");
@@ -57,7 +57,7 @@ public class DBSeeder implements CommandLineRunner {
         );
 
         Student rob = new Student(
-                "Rob", "Williams", 30, new HashMap<String, String>() {
+                0L,"Rob", "Williams", 30, new HashMap<String, String>() {
             {
                 put("BSc", "Pure Mathematics");
             }
