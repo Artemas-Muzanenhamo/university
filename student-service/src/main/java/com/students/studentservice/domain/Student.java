@@ -23,4 +23,3 @@ public class Student {
     @ElementCollection
     private Map<String, String> degrees;
 }
-
