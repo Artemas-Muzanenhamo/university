@@ -19,11 +19,11 @@ public class DBSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Tutor martin = new Tutor("Martin", "Lawrence", Arrays.asList("Software Engineering", "Computer Sciences"));
-        Tutor thomas = new Tutor("Thomas", "Jefferson", Arrays.asList("Mathematics"));
-        Tutor cassie = new Tutor("Cassie", "James", Arrays.asList("Law"));
-        Tutor sandy = new Tutor("Sandy", "Malik", Arrays.asList("Criminal Law", "Judicial Law"));
-        Tutor rob = new Tutor("Robert", "Gabriel", Arrays.asList("Geology"));
+        Tutor martin = new Tutor(0,"Martin", "Lawrence", Arrays.asList("Software Engineering", "Computer Sciences"));
+        Tutor thomas = new Tutor(0,"Thomas", "Jefferson", Arrays.asList("Mathematics"));
+        Tutor cassie = new Tutor(0,"Cassie", "James", Arrays.asList("Law"));
+        Tutor sandy = new Tutor(0,"Sandy", "Malik", Arrays.asList("Criminal Law", "Judicial Law"));
+        Tutor rob = new Tutor(0,"Robert", "Gabriel", Arrays.asList("Geology"));
 
         // Delete all previous data before we use any data
         this.tutorRepository.deleteAll();
