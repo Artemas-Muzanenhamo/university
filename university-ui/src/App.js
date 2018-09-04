@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import Students from './Student/Students';
+import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        My App
-          <Students test="Hello World"/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                University App
+            </div>
+        );
+    }
 }
 
 export default App;
